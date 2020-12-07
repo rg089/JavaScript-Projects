@@ -7,8 +7,7 @@ function updateDisplay(){
 const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
     const { target } = event;
-    if (!target.matches('button')) {
-        return;}
+    if (!target.matches('button')) return;
 
     else if (target.classList.contains('operator')) handleOperator(target.value);
 
